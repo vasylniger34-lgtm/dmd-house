@@ -24,7 +24,11 @@
   --cursor: var(--accent);
 }
 
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; cursor: none !important; }
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+@media (hover: hover) {
+  *, *::before, *::after { cursor: none !important; }
+}
+
 
 html { scroll-behavior: smooth; font-size: 16px; background: var(--primary); }
 
@@ -38,24 +42,30 @@ body {
 }
 
 /* === CUSTOM CURSOR === */
-.cursor-dot {
-  width: 8px; height: 8px; background: var(--accent);
-  position: fixed; top: 0; left: 0; border-radius: 50%;
-  pointer-events: none; z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s, height 0.3s;
+@media (hover: hover) {
+  .cursor-dot {
+    width: 8px; height: 8px; background: var(--accent);
+    position: fixed; top: 0; left: 0; border-radius: 50%;
+    pointer-events: none; z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+  }
+  .cursor-outline {
+    width: 40px; height: 40px; border: 1px solid var(--accent);
+    position: fixed; top: 0; left: 0; border-radius: 50%;
+    pointer-events: none; z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background 0.3s, border-color 0.3s;
+  }
+  .cursor-hover .cursor-outline {
+    width: 60px; height: 60px; background: var(--accent-glow);
+    border-color: transparent;
+  }
 }
-.cursor-outline {
-  width: 40px; height: 40px; border: 1px solid var(--accent);
-  position: fixed; top: 0; left: 0; border-radius: 50%;
-  pointer-events: none; z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s, height 0.3s, background 0.3s, border-color 0.3s;
+@media (hover: none) {
+  .cursor-dot, .cursor-outline { display: none; }
 }
-.cursor-hover .cursor-outline {
-  width: 60px; height: 60px; background: var(--accent-glow);
-  border-color: transparent;
-}
+
 
 h1,h2,h3,h4 { font-family: 'Playfair Display', serif; font-weight: 600; line-height: 1.2; }
 h1 { font-size: clamp(2.4rem,5vw,4rem); }
@@ -426,4 +436,8 @@ section { padding: 120px 0; }
   .hero-content { padding:0 20px; }
   .footer-grid { grid-template-columns:1fr; }
   .contact-links { flex-direction:column; align-items:center; }
+  .rules-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-stats { grid-template-columns: 1fr; gap: 32px; }
+  .rule-item h4 { font-size: 0.8rem; letter-spacing: 1px; }
 }
+
