@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMD HOUSE — Котеджі в Карпатах | Басейн, Чан, Сауна</title>
+  <meta name="description" content="DMD HOUSE — преміальні котеджі у Верхньому Синьовидному, Карпати. Басейн з підігрівом, чан на дровах, сауна, камін. Ідеальний відпочинок для сім'ї та друзів.">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">DMD <span>HOUSE</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#cottages">Котеджі</a></li>
+        <li><a href="#spa">SPA</a></li>
+        <li><a href="#amenities">Зручності</a></li>
+        <li><a href="#location">Локація</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Забронювати</a>
+      <button class="burger" id="burgerBtn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">&times;</button>
+    <a href="#about" class="mobile-link">Про нас</a>
+    <a href="#cottages" class="mobile-link">Котеджі</a>
+    <a href="#spa" class="mobile-link">SPA</a>
+    <a href="#amenities" class="mobile-link">Зручності</a>
+    <a href="#location" class="mobile-link">Локація</a>
+    <a href="#contact" class="mobile-link" style="color:var(--accent)">Забронювати</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="img/generated/hero.png" alt="DMD HOUSE котедж у Карпатах">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌿 Верхнє Синьовидне, Карпати</div>
+      <h1>Ваш затишок <em>у серці Карпат</em></h1>
+      <p class="hero-sub">Два стильних котеджі біля річки Стрий з басейном, чаном на дровах та панорамою на гори. Тут час зупиняється.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Забронювати</a>
+        <a href="#cottages" class="btn-outline">Наші котеджі</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <img src="img/generated/interior.png" alt="Інтер'єр DMD HOUSE">
+        </div>
+        <div class="about-text reveal">
+          <div class="section-label">Про нас</div>
+          <h2 class="section-title">Назва з любов'ю</h2>
+          <p class="section-desc">
+            <strong>DMD</strong> — це абревіатура, створена на честь трьох синів власника: <em>Дмитра, Матвія та Дем'яна</em>. Кожен будинок побудований з тією ж любов'ю та увагою до деталей, яку батьки дарують своїм дітям.
+          </p>
+          <p class="section-desc">
+            Ми подбали про все — від келихів для вина до якісних рушників. Вам залишається лише насолоджуватися відпочинком.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Котеджі</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">+28°</div>
+              <div class="stat-label">Басейн</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">24/7</div>
+              <div class="stat-label">Підтримка</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COTTAGES -->
+  <section class="cottages" id="cottages">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label" style="justify-content:center;">Колекція</div>
+        <h2 class="section-title">Наші котеджі</h2>
+        <p class="section-desc center">Кожен будинок — це окремий світ зі своєю атмосферою, де продумана кожна дрібниця для вашого комфорту.</p>
+      </div>
+
+      <div class="cottage-grid">
+        <!-- Cottage 1 -->
+        <div class="cottage-card reveal">
+          <div class="cottage-img">
+            <img src="img/generated/interior.png" alt="DMD House Cottage 1">
+            <div class="cottage-badge">🔥 З каміном</div>
+          </div>
+          <div class="cottage-info">
+            <h3>DMD Cottage 1</h3>
+            <div class="cottage-meta">
+              <span>👥 до 6 осіб</span>
+              <span>🛏️ 3 спальні</span>
+            </div>
+            <p class="cottage-desc">Просторий котедж з каміном, повністю обладнаною кухнею та терасою. Ідеальний для великих компаній та сімей.</p>
+            <div class="cottage-price">
+              <div>
+                <span class="price">3 500 ₴</span>
+                <span class="per"> / доба</span>
+              </div>
+              <a href="#contact" class="btn-sm">Обрати</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cottage 2 -->
+        <div class="cottage-card reveal">
+          <div class="cottage-img">
+            <img src="img/generated/cottage2.png" alt="DMD House Cottage 2">
+            <div class="cottage-badge">✨ Затишний</div>
+          </div>
+          <div class="cottage-info">
+            <h3>DMD Cottage 2</h3>
+            <div class="cottage-meta">
+              <span>👥 до 4 осіб</span>
+              <span>🛏️ 2 спальні</span>
+            </div>
+            <p class="cottage-desc">Компактний та затишний котедж для пар або невеликих компаній. Сучасний дизайн, тепла атмосфера дерева.</p>
+            <div class="cottage-price">
+              <div>
+                <span class="price">3 500 ₴</span>
+                <span class="per"> / доба</span>
+              </div>
+              <a href="#contact" class="btn-sm">Обрати</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panorama -->
+        <div class="cottage-card reveal">
+          <div class="cottage-img">
+            <img src="img/generated/panorama.png" alt="DMD Panorama">
+            <div class="cottage-badge">🏔️ Панорама</div>
+          </div>
+          <div class="cottage-info">
+            <h3>DMD Panorama</h3>
+            <div class="cottage-meta">
+              <span>👥 до 4 осіб</span>
+              <span>🛏️ 2 спальні</span>
+            </div>
+            <p class="cottage-desc">Окремий сучасний котедж з панорамними вікнами на гори. Преміальний комфорт у серці природи.</p>
+            <div class="cottage-price">
+              <div>
+                <span class="price">5 000 ₴</span>
+                <span class="per"> / доба</span>
+              </div>
+              <a href="#contact" class="btn-sm">Обрати</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPA -->
+  <section class="spa" id="spa">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label" style="justify-content:center;">Релакс</div>
+        <h2 class="section-title">SPA та відпочинок</h2>
+        <p class="section-desc center">Відновіть сили тіла та душі. Басейн з підігрівом вже включений у вартість проживання.</p>
+      </div>
+
+      <div class="spa-grid">
+        <div class="spa-card reveal">
+          <img src="img/generated/pool.png" alt="Басейн з підігрівом">
+          <div class="spa-overlay">
+            <h3>Басейн з підігрівом</h3>
+            <p>Температура +28°C цілий рік. Включено у вартість проживання.</p>
+            <div class="spa-price-tag">Безкоштовно ✓</div>
+          </div>
+        </div>
+        <div class="spa-card reveal">
+          <img src="img/generated/vat.png" alt="Чан на дровах">
+          <div class="spa-overlay">
+            <h3>Чан на дровах</h3>
+            <p>Традиційний карпатський чан під відкритим небом з видом на гори.</p>
+            <div class="spa-price-tag">від 2 000 ₴</div>
+          </div>
+        </div>
+        <div class="spa-card reveal">
+          <img src="img/generated/sauna.png" alt="Сауна">
+          <div class="spa-overlay">
+            <h3>Сауна</h3>
+            <p>Фінська сауна для повного релаксу після активного дня в горах.</p>
+            <div class="spa-price-tag">від 800 ₴</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="amenities" id="amenities">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label" style="justify-content:center;">Комфорт</div>
+        <h2 class="section-title">Усе для вашого відпочинку</h2>
+        <p class="section-desc center">Ми подбали про кожну дрібницю, щоб ви відчували себе як вдома — тільки краще.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity reveal">
+          <div class="amenity-icon">🔥</div>
+          <h4>Мангальна зона</h4>
+          <p>Обладнана зона барбекю з усім необхідним</p>
+        </div>
+        <div class="amenity reveal">
+          <div class="amenity-icon">📽️</div>
+          <h4>Проектор</h4>
+          <p>Кіновечори під зоряним небом Карпат</p>
+        </div>
+        <div class="amenity reveal">
+          <div class="amenity-icon">🍳</div>
+          <h4>Повна кухня</h4>
+          <p>Від келихів для вина до якісного посуду</p>
+        </div>
+        <div class="amenity reveal">
+          <div class="amenity-icon">🛜</div>
+          <h4>Starlink Wi-Fi</h4>
+          <p>Швидкісний інтернет навіть у горах</p>
+        </div>
+        <div class="amenity reveal">
+          <div class="amenity-icon">🐾</div>
+          <h4>Pet-friendly</h4>
+          <p>Ваші улюбленці — наші гості</p>
+        </div>
+        <div class="amenity reveal">
+          <div class="amenity-icon">🅿️</div>
+          <h4>Паркінг</h4>
+          <p>Безкоштовна приватна парковка</p>
+        </div>
+        <div class="amenity reveal">
+          <div class="amenity-icon">🏔️</div>
+          <h4>Вид на гори</h4>
+          <p>Панорама Карпатських вершин з терас</p>
+        </div>
+        <div class="amenity reveal">
+          <div class="amenity-icon">🪵</div>
+          <h4>Камін</h4>
+          <p>Живий вогонь для романтичних вечорів</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <section class="gallery-strip">
+    <div class="gallery-scroll" id="galleryScroll">
+      <img src="img/generated/hero.png" alt="DMD Gallery 1">
+      <img src="img/generated/interior.png" alt="DMD Gallery 2">
+      <img src="img/generated/pool.png" alt="DMD Gallery 3">
+      <img src="img/generated/vat.png" alt="DMD Gallery 4">
+      <img src="img/generated/panorama.png" alt="DMD Gallery 5">
+      <img src="img/generated/sauna.png" alt="DMD Gallery 6">
+      <!-- duplicated for infinite scroll -->
+      <img src="img/generated/hero.png" alt="DMD Gallery 1">
+      <img src="img/generated/interior.png" alt="DMD Gallery 2">
+      <img src="img/generated/pool.png" alt="DMD Gallery 3">
+      <img src="img/generated/vat.png" alt="DMD Gallery 4">
+      <img src="img/generated/panorama.png" alt="DMD Gallery 5">
+      <img src="img/generated/sauna.png" alt="DMD Gallery 6">
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section class="rules" id="rules">
+    <div class="container">
+      <div class="rules-grid reveal">
+        <div class="rule-item">
+          <h4>Заїзд та виїзд</h4>
+          <p>Заїзд з 15:00. Виїзд до 12:00. Можливий ранній заїзд за попередньою домовленістю.</p>
+        </div>
+        <div class="rule-item">
+          <h4>Домашні улюбленці</h4>
+          <p>Ми раді гостям з хвостиками (до 10 кг). Проживання пухнастиків безкоштовне!</p>
+        </div>
+        <div class="rule-item">
+          <h4>Тихий відпочинок</h4>
+          <p>Ми цінуємо спокій наших гостей та сусідів. Просимо дотримуватися тиші після 22:00.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="location-grid">
+        <div class="reveal">
+          <div class="section-label">Локація</div>
+          <h2 class="section-title">Де нас знайти</h2>
+          <p class="section-desc">Верхнє Синьовидне, Стрийський район, Львівська область. Біля річки Стрий, у серці Карпатських гір.</p>
+          <ul class="poi-list">
+            <li>
+              <span class="poi-icon">🏰</span>
+              <div><strong>Скелі Тустані</strong> — 20 хв на авто</div>
+            </li>
+            <li>
+              <span class="poi-icon">🏞️</span>
+              <div><strong>Річка Стрий</strong> — прямо біля котеджів</div>
+            </li>
+            <li>
+              <span class="poi-icon">🚗</span>
+              <div><strong>Львів</strong> — 1.5 год на авто</div>
+            </li>
+            <li>
+              <span class="poi-icon">⛷️</span>
+              <div><strong>Славське</strong> — 40 хв на авто</div>
+            </li>
+          </ul>
+        </div>
+        <div class="map-wrapper reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2600!2d23.6026249!3d49.1131338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDA2JzQ3LjMiTiAyM8KwMzYnMDkuNSJF!5e0!3m2!1suk!2sua!4v1" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="section-label" style="justify-content:center;">Бронювання</div>
+        <h2>Готові до відпочинку?</h2>
+        <p>Зв'яжіться з нами для бронювання або уточнення деталей. Ми відповідаємо швидко!</p>
+        <a href="tel:+380672851918" class="btn-primary">📞 +38 067 285 1918</a>
+        <div class="contact-links">
+          <a href="https://t.me/+380672851918" class="contact-link" target="_blank">
+            <span class="icon">✈️</span> Telegram
+          </a>
+          <a href="viber://chat?number=+380672851918" class="contact-link" target="_blank">
+            <span class="icon">💬</span> Viber
+          </a>
+          <a href="https://www.instagram.com/dmd_house_karpaty/" class="contact-link" target="_blank">
+            <span class="icon">📷</span> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">DMD <span>HOUSE</span></span>
+          <p>Преміальні котеджі у Карпатах. Названі на честь любові — Дмитро, Матвій, Дем'ян.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навігація</h4>
+          <ul>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#cottages">Котеджі</a></li>
+            <li><a href="#spa">SPA</a></li>
+            <li><a href="#location">Локація</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Послуги</h4>
+          <ul>
+            <li><a href="#spa">Басейн</a></li>
+            <li><a href="#spa">Чан на дровах</a></li>
+            <li><a href="#spa">Сауна</a></li>
+            <li><a href="#amenities">Барбекю</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакти</h4>
+          <ul>
+            <li><a href="tel:+380672851918">+38 067 285 1918</a></li>
+            <li><a href="https://www.instagram.com/dmd_house_karpaty/" target="_blank">Instagram</a></li>
+            <li><a href="https://t.me/+380672851918" target="_blank">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 DMD HOUSE. Усі права захищені.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
